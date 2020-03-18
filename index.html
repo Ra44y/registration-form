@@ -3,69 +3,60 @@
 <head>
   <meta charset="utf-8">
   <title>Registration Form</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="css/modules.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i" rel="stylesheet">
 </head>
 <body>
-
-  <section class="island">
-    <div class="unit s">
-      <h1 class="pad-t normal border-box-bottom">Want to go to Mars?</h1>
+  <section class="max-length island">
+    <div>
+      <h1 class="pad-t exa not-bold">Want to go to Mars?</h1>
       <p class="mega">We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
-
-      <form class="" method="POST" action="https://formspree.io/">
+      <form method="POST" action="https://formspree.io/brow1234@algonquinlive.com">
         <fieldset>
-          <legend class="giga italic push-1-2">Personal details</legend>
+          <legend class="italic push unit mega not-bold">Personal details</legend>
           <div class="grid">
-
-            <div class="unit xs-1 s-1 m-1 l-1-2 xl-1-2 push">
-              <label for="name">Name</label>
-              <input id="name" name="name">
+            <div class="unit xs-1 s-1 m-1 l-1-2">
+              <label class="kilo" for="name">Name</label>
+              <input class="push" id="name" name="name" required>
             </div>
-
-            <div class="unit xs-1 s-1 m-1 l-1-2 xl-1-2 push">
-              <label for="age">Age</label>
-              <input id="age" name="age">
+            <div class="unit xs-1 s-1 m-1 l-1-2">
+              <label class="kilo" for="number">Age</label>
+              <input class="push" id="number" required>
             </div>
-
-            <div class="unit xs-1 s-1 m-1 l-1-2 xl-1-2 push">
-              <label for="email">Email</label>
-              <input id="email" type="email" name="email">
+            <div class="unit xs-1 s-1 m-1 l-1-2">
+              <label class="kilo" for="email">Email</label>
+              <input class="push" id="email" type="email" required>
             </div>
-
-            <div class="unit xs-1 s-1 m-1 l-1-2 xl-1-2 push">
-              <label for="fitness">Physical fitness</label>
-              <select id="fitness" name="_fitness">
+            <div class="unit xs-1 s-1 m-1 l-1-2">
+              <label class="kilo" for="subject">Physical fitness</label>
+              <select class="push" id="subject" name="subject">
                 <option>Super-human</option>
                 <option>Fit as a fiddle</option>
                 <option>Not terribly strong</option>
                 <option>A little couch-potato-y</option>
               </select>
             </div>
-          </div>
-
-          <div class="unit xs-1 s-1 m-1 l-1 xl-1">
-            <label for="address">Address</label>
-            <textarea id="address" name="address"></textarea>
+            <div class="unit xs-1 s-1 m-1 l-1">
+              <label class="kilo" for="address">Address</label>
+              <textarea id="address" name="message"></textarea>
+            </div>
           </div>
         </fieldset>
-
         <fieldset>
-          <legend>Mission statement</legend>
-          <div class="push giga">
-            <label for="message">Why do you want to go to Mars?</label>
-            <textarea id="message" name="message"></textarea>
+          <legend class="italic push mega not-bold">Mission statement</legend>
+          <div>
+            <label class="kilo" for="message">Why do you want to go to Mars?</label>
+            <textarea id="message" required></textarea>
           </div>
-
-          <div class="unit-content-center-horizontal">
-            <button type="submit" value="button">Register for the trip!</button>
-          </div>
-          <input type="hidden" name="_subject" value="Request to join the mission">
         </fieldset>
+        <div class="text-center">
+          <button class="btn kilo" type="submit">Register for the trip!</button>
+          <input type="hidden" name="_subject" value="Request to join the mission">
+        </div>
       </form>
     </div>
   </section>
